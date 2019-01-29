@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		613FAD5C22006BD0004E644E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD5B22006BD0004E644E /* AppDelegate.swift */; };
+		613FAD5E22006BD0004E644E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD5D22006BD0004E644E /* ViewController.swift */; };
+		613FAD6122006BD0004E644E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD5F22006BD0004E644E /* Main.storyboard */; };
+		613FAD6322006BD3004E644E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD6222006BD3004E644E /* Assets.xcassets */; };
+		613FAD6622006BD3004E644E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD6422006BD3004E644E /* LaunchScreen.storyboard */; };
+		613FAD7122006BD3004E644E /* supotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD7022006BD3004E644E /* supotaTests.swift */; };
+		613FAD7C22006BD3004E644E /* supotaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD7B22006BD3004E644E /* supotaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		613FAD6D22006BD3004E644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 613FAD5022006BD0004E644E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 613FAD5722006BD0004E644E;
+			remoteInfo = supota;
+		};
+		613FAD7822006BD3004E644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 613FAD5022006BD0004E644E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 613FAD5722006BD0004E644E;
+			remoteInfo = supota;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		613FAD5822006BD0004E644E /* supota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = supota.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		613FAD5B22006BD0004E644E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		613FAD5D22006BD0004E644E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		613FAD6022006BD0004E644E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		613FAD6222006BD3004E644E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		613FAD6522006BD3004E644E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		613FAD6722006BD3004E644E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		613FAD6C22006BD3004E644E /* supotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = supotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		613FAD7022006BD3004E644E /* supotaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supotaTests.swift; sourceTree = "<group>"; };
+		613FAD7222006BD3004E644E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		613FAD7722006BD3004E644E /* supotaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = supotaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		613FAD7B22006BD3004E644E /* supotaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supotaUITests.swift; sourceTree = "<group>"; };
+		613FAD7D22006BD3004E644E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		613FAD5522006BD0004E644E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613FAD6922006BD3004E644E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613FAD7422006BD3004E644E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		613FAD4F22006BD0004E644E = {
+			isa = PBXGroup;
+			children = (
+				613FAD5A22006BD0004E644E /* supota */,
+				613FAD6F22006BD3004E644E /* supotaTests */,
+				613FAD7A22006BD3004E644E /* supotaUITests */,
+				613FAD5922006BD0004E644E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		613FAD5922006BD0004E644E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				613FAD5822006BD0004E644E /* supota.app */,
+				613FAD6C22006BD3004E644E /* supotaTests.xctest */,
+				613FAD7722006BD3004E644E /* supotaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		613FAD5A22006BD0004E644E /* supota */ = {
+			isa = PBXGroup;
+			children = (
+				613FAD5B22006BD0004E644E /* AppDelegate.swift */,
+				613FAD5D22006BD0004E644E /* ViewController.swift */,
+				613FAD5F22006BD0004E644E /* Main.storyboard */,
+				613FAD6222006BD3004E644E /* Assets.xcassets */,
+				613FAD6422006BD3004E644E /* LaunchScreen.storyboard */,
+				613FAD6722006BD3004E644E /* Info.plist */,
+			);
+			path = supota;
+			sourceTree = "<group>";
+		};
+		613FAD6F22006BD3004E644E /* supotaTests */ = {
+			isa = PBXGroup;
+			children = (
+				613FAD7022006BD3004E644E /* supotaTests.swift */,
+				613FAD7222006BD3004E644E /* Info.plist */,
+			);
+			path = supotaTests;
+			sourceTree = "<group>";
+		};
+		613FAD7A22006BD3004E644E /* supotaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				613FAD7B22006BD3004E644E /* supotaUITests.swift */,
+				613FAD7D22006BD3004E644E /* Info.plist */,
+			);
+			path = supotaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		613FAD5722006BD0004E644E /* supota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613FAD8022006BD3004E644E /* Build configuration list for PBXNativeTarget "supota" */;
+			buildPhases = (
+				613FAD5422006BD0004E644E /* Sources */,
+				613FAD5522006BD0004E644E /* Frameworks */,
+				613FAD5622006BD0004E644E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = supota;
+			productName = supota;
+			productReference = 613FAD5822006BD0004E644E /* supota.app */;
+			productType = "com.apple.product-type.application";
+		};
+		613FAD6B22006BD3004E644E /* supotaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613FAD8322006BD3004E644E /* Build configuration list for PBXNativeTarget "supotaTests" */;
+			buildPhases = (
+				613FAD6822006BD3004E644E /* Sources */,
+				613FAD6922006BD3004E644E /* Frameworks */,
+				613FAD6A22006BD3004E644E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				613FAD6E22006BD3004E644E /* PBXTargetDependency */,
+			);
+			name = supotaTests;
+			productName = supotaTests;
+			productReference = 613FAD6C22006BD3004E644E /* supotaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		613FAD7622006BD3004E644E /* supotaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613FAD8622006BD3004E644E /* Build configuration list for PBXNativeTarget "supotaUITests" */;
+			buildPhases = (
+				613FAD7322006BD3004E644E /* Sources */,
+				613FAD7422006BD3004E644E /* Frameworks */,
+				613FAD7522006BD3004E644E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				613FAD7922006BD3004E644E /* PBXTargetDependency */,
+			);
+			name = supotaUITests;
+			productName = supotaUITests;
+			productReference = 613FAD7722006BD3004E644E /* supotaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		613FAD5022006BD0004E644E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "柳川優稀";
+				TargetAttributes = {
+					613FAD5722006BD0004E644E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					613FAD6B22006BD3004E644E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 613FAD5722006BD0004E644E;
+					};
+					613FAD7622006BD3004E644E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 613FAD5722006BD0004E644E;
+					};
+				};
+			};
+			buildConfigurationList = 613FAD5322006BD0004E644E /* Build configuration list for PBXProject "supota" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 613FAD4F22006BD0004E644E;
+			productRefGroup = 613FAD5922006BD0004E644E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				613FAD5722006BD0004E644E /* supota */,
+				613FAD6B22006BD3004E644E /* supotaTests */,
+				613FAD7622006BD3004E644E /* supotaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		613FAD5622006BD0004E644E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613FAD6622006BD3004E644E /* LaunchScreen.storyboard in Resources */,
+				613FAD6322006BD3004E644E /* Assets.xcassets in Resources */,
+				613FAD6122006BD0004E644E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613FAD6A22006BD3004E644E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613FAD7522006BD3004E644E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		613FAD5422006BD0004E644E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613FAD5E22006BD0004E644E /* ViewController.swift in Sources */,
+				613FAD5C22006BD0004E644E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613FAD6822006BD3004E644E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613FAD7122006BD3004E644E /* supotaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613FAD7322006BD3004E644E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613FAD7C22006BD3004E644E /* supotaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		613FAD6E22006BD3004E644E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 613FAD5722006BD0004E644E /* supota */;
+			targetProxy = 613FAD6D22006BD3004E644E /* PBXContainerItemProxy */;
+		};
+		613FAD7922006BD3004E644E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 613FAD5722006BD0004E644E /* supota */;
+			targetProxy = 613FAD7822006BD3004E644E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		613FAD5F22006BD0004E644E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613FAD6022006BD0004E644E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		613FAD6422006BD3004E644E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613FAD6522006BD3004E644E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		613FAD7E22006BD3004E644E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		613FAD7F22006BD3004E644E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		613FAD8122006BD3004E644E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZB8D54D9;
+				INFOPLIST_FILE = supota/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanack1225.supota;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		613FAD8222006BD3004E644E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZB8D54D9;
+				INFOPLIST_FILE = supota/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanack1225.supota;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		613FAD8422006BD3004E644E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZB8D54D9;
+				INFOPLIST_FILE = supotaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanack1225.supotaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/supota.app/supota";
+			};
+			name = Debug;
+		};
+		613FAD8522006BD3004E644E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZB8D54D9;
+				INFOPLIST_FILE = supotaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanack1225.supotaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/supota.app/supota";
+			};
+			name = Release;
+		};
+		613FAD8722006BD3004E644E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZB8D54D9;
+				INFOPLIST_FILE = supotaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanack1225.supotaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = supota;
+			};
+			name = Debug;
+		};
+		613FAD8822006BD3004E644E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZB8D54D9;
+				INFOPLIST_FILE = supotaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanack1225.supotaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = supota;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		613FAD5322006BD0004E644E /* Build configuration list for PBXProject "supota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613FAD7E22006BD3004E644E /* Debug */,
+				613FAD7F22006BD3004E644E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		613FAD8022006BD3004E644E /* Build configuration list for PBXNativeTarget "supota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613FAD8122006BD3004E644E /* Debug */,
+				613FAD8222006BD3004E644E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		613FAD8322006BD3004E644E /* Build configuration list for PBXNativeTarget "supotaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613FAD8422006BD3004E644E /* Debug */,
+				613FAD8522006BD3004E644E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		613FAD8622006BD3004E644E /* Build configuration list for PBXNativeTarget "supotaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613FAD8722006BD3004E644E /* Debug */,
+				613FAD8822006BD3004E644E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 613FAD5022006BD0004E644E /* Project object */;
+}
