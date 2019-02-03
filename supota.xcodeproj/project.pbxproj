@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0A503377740E2638D7DCDD /* Pods_supota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10064C94813CF9BDBBF33165 /* Pods_supota.framework */; };
 		613FAD5C22006BD0004E644E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD5B22006BD0004E644E /* AppDelegate.swift */; };
 		613FAD5E22006BD0004E644E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD5D22006BD0004E644E /* ViewController.swift */; };
 		613FAD6122006BD0004E644E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD5F22006BD0004E644E /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		613FAD6622006BD3004E644E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD6422006BD3004E644E /* LaunchScreen.storyboard */; };
 		613FAD7122006BD3004E644E /* supotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD7022006BD3004E644E /* supotaTests.swift */; };
 		613FAD7C22006BD3004E644E /* supotaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD7B22006BD3004E644E /* supotaUITests.swift */; };
+		613FAD8C22008019004E644E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD8B22008019004E644E /* GoogleService-Info.plist */; };
+		6FEA6694A0C7444A78E03D1C /* Pods_supotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B65049739D299D8FFE9FD89 /* Pods_supotaTests.framework */; };
+		D823F64A3D5D3F1A39C37610 /* Pods_supotaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10064C94813CF9BDBBF33165 /* Pods_supota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supotaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B65049739D299D8FFE9FD89 /* Pods_supotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DCB29AC692D9DAB52CBCFB /* Pods-supota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supota/Pods-supota.debug.xcconfig"; sourceTree = "<group>"; };
 		613FAD5822006BD0004E644E /* supota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = supota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		613FAD5B22006BD0004E644E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		613FAD5D22006BD0004E644E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,12 @@
 		613FAD7722006BD3004E644E /* supotaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = supotaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		613FAD7B22006BD3004E644E /* supotaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supotaUITests.swift; sourceTree = "<group>"; };
 		613FAD7D22006BD3004E644E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		613FAD8B22008019004E644E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6370DCBAD7B289099F595B7C /* Pods-supotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supotaTests/Pods-supotaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B49037E3023E6EE0106D68 /* Pods-supota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supota.release.xcconfig"; path = "Pods/Target Support Files/Pods-supota/Pods-supota.release.xcconfig"; sourceTree = "<group>"; };
+		A52A711B9A2A4DB7EBC893F7 /* Pods-supotaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supotaUITests/Pods-supotaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4E8A973F4E4B2AC33049A16 /* Pods-supotaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaUITests/Pods-supotaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E99FA008561C5033F31D1F64 /* Pods-supotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaTests/Pods-supotaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0A503377740E2638D7DCDD /* Pods_supota.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FEA6694A0C7444A78E03D1C /* Pods_supotaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D823F64A3D5D3F1A39C37610 /* Pods_supotaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FC62CB37F7B4F8ED984E42E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10064C94813CF9BDBBF33165 /* Pods_supota.framework */,
+				3B65049739D299D8FFE9FD89 /* Pods_supotaTests.framework */,
+				3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		613FAD4F22006BD0004E644E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				613FAD6F22006BD3004E644E /* supotaTests */,
 				613FAD7A22006BD3004E644E /* supotaUITests */,
 				613FAD5922006BD0004E644E /* Products */,
+				892FED750A9A2CB3F0D621FF /* Pods */,
+				3FC62CB37F7B4F8ED984E42E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +131,7 @@
 				613FAD5F22006BD0004E644E /* Main.storyboard */,
 				613FAD6222006BD3004E644E /* Assets.xcassets */,
 				613FAD6422006BD3004E644E /* LaunchScreen.storyboard */,
+				613FAD8B22008019004E644E /* GoogleService-Info.plist */,
 				613FAD6722006BD3004E644E /* Info.plist */,
 			);
 			path = supota;
@@ -125,6 +155,19 @@
 			path = supotaUITests;
 			sourceTree = "<group>";
 		};
+		892FED750A9A2CB3F0D621FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40DCB29AC692D9DAB52CBCFB /* Pods-supota.debug.xcconfig */,
+				A1B49037E3023E6EE0106D68 /* Pods-supota.release.xcconfig */,
+				6370DCBAD7B289099F595B7C /* Pods-supotaTests.debug.xcconfig */,
+				E99FA008561C5033F31D1F64 /* Pods-supotaTests.release.xcconfig */,
+				A52A711B9A2A4DB7EBC893F7 /* Pods-supotaUITests.debug.xcconfig */,
+				D4E8A973F4E4B2AC33049A16 /* Pods-supotaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 613FAD8022006BD3004E644E /* Build configuration list for PBXNativeTarget "supota" */;
 			buildPhases = (
+				CDD0ECD027BC5924A50A3944 /* [CP] Check Pods Manifest.lock */,
 				613FAD5422006BD0004E644E /* Sources */,
 				613FAD5522006BD0004E644E /* Frameworks */,
 				613FAD5622006BD0004E644E /* Resources */,
+				CADB2D2F4BF1D6DC843F0D36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 613FAD8322006BD3004E644E /* Build configuration list for PBXNativeTarget "supotaTests" */;
 			buildPhases = (
+				BF7FF993758871D0442D1384 /* [CP] Check Pods Manifest.lock */,
 				613FAD6822006BD3004E644E /* Sources */,
 				613FAD6922006BD3004E644E /* Frameworks */,
 				613FAD6A22006BD3004E644E /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 613FAD8622006BD3004E644E /* Build configuration list for PBXNativeTarget "supotaUITests" */;
 			buildPhases = (
+				C76C3D90B14BAEB9B31C4297 /* [CP] Check Pods Manifest.lock */,
 				613FAD7322006BD3004E644E /* Sources */,
 				613FAD7422006BD3004E644E /* Frameworks */,
 				613FAD7522006BD3004E644E /* Resources */,
@@ -230,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				613FAD6622006BD3004E644E /* LaunchScreen.storyboard in Resources */,
+				613FAD8C22008019004E644E /* GoogleService-Info.plist in Resources */,
 				613FAD6322006BD3004E644E /* Assets.xcassets in Resources */,
 				613FAD6122006BD0004E644E /* Main.storyboard in Resources */,
 			);
@@ -250,6 +298,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF7FF993758871D0442D1384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-supotaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76C3D90B14BAEB9B31C4297 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-supotaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CADB2D2F4BF1D6DC843F0D36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-supota/Pods-supota-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-supota/Pods-supota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD0ECD027BC5924A50A3944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-supota-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		613FAD5422006BD0004E644E /* Sources */ = {
@@ -428,6 +555,7 @@
 		};
 		613FAD8122006BD3004E644E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DCB29AC692D9DAB52CBCFB /* Pods-supota.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +574,7 @@
 		};
 		613FAD8222006BD3004E644E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B49037E3023E6EE0106D68 /* Pods-supota.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +593,7 @@
 		};
 		613FAD8422006BD3004E644E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6370DCBAD7B289099F595B7C /* Pods-supotaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +615,7 @@
 		};
 		613FAD8522006BD3004E644E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99FA008561C5033F31D1F64 /* Pods-supotaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +637,7 @@
 		};
 		613FAD8722006BD3004E644E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52A711B9A2A4DB7EBC893F7 /* Pods-supotaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +658,7 @@
 		};
 		613FAD8822006BD3004E644E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E8A973F4E4B2AC33049A16 /* Pods-supotaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
