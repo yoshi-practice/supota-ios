@@ -1,22 +1,29 @@
 
 import FirebaseDatabase
+import Firebase
 import UIKit
+import FirebaseStorage
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    
     @IBOutlet var TextFeild:UITextField!
     @IBOutlet var TextView:UITextView!
+    var Table:UITableView!
     var snap: DataSnapshot!
     var ref: DatabaseReference!
     var items: [DataSnapshot] = []
     var useritems: [DataSnapshot] = []
-    var iconimages:[String] = []
+    var inages: [String] = []
+    var uid:[String] = []
     var usernames:[String] = []
     var content: [String] = []
     
 //投稿
-    func post(){
+
+    func post(content:String,image:String){
         ref = Database.database().reference()
-        ref.child("timeline").childByAutoId().setValue(["UID":"uid","content":"content"])
+        ref.child("timeline").childByAutoId().setValue(["UID":"uid","content":content,"images":"URL","likes":"0"])
         
     }
     
@@ -40,27 +47,27 @@ class ViewController: UIViewController {
             }
         }
     }
+    
 //配列を展開し、TableView表示形式に整形。
     func set(){
         for value in items{
-             let item = value.value as! Dictionary<String, AnyObject>
-            item["content"]
+            let item = value.value as! Dictionary<String, AnyObject>
             let postuser = item["UID"] as! String
             finduserdata(uid: postuser)
+            
             
             
             
         }
     
     }
+    
 //個人データの取得
     func finduserdata(uid:String)  {
         ref.child("userdata").child(uid).observe(.value, with: {(snapShots) in
             if snapShots.children.allObjects is [DataSnapshot] {
                 self.snap = snapShots
-
             }
-
             self.reloaduserddata(snap: self.snap)
         })
     }
@@ -74,12 +81,30 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func getprofileimage(uid:String) -> UIImage {
+        var profileImage:UIImage!
+        let imagePath = Storage.storage().reference().child("profile/\(uid).jpg")
+        
+        // 画像のDLサイズはお好みで調整してください
+        imagePath.getData(maxSize: 1 * 1024 * 1024) { data, error in
+            if error != nil {
+            } else {
+                profileImage = UIImage(data: data!)
+                
+            }
+        }
+        return profileImage
+    }
+
+    
     func adduserdata(){
         for value in items{
             let item = value.value as! Dictionary<String, AnyObject>
             usernames.append(item["username"] as! String)
-            usernames.append(item["username"] as! String)
-
+            uid.append(item["uid"] as! String)
+            inages.append(item["images"] as! String)
+            
         }
         
     }
@@ -90,8 +115,30 @@ class ViewController: UIViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+    }
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // 生成するCellの数
+        return 4
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //  Cellの指定
+        let cell = Table.dequeueReusableCell(withIdentifier: "Cell") as! TimelineTableTableViewCell
+        //  Cellに入れる要素の指定
+        cell.username.text = usernames[indexPath.row]
+        cell.ImageView.image = getprofileimage(uid: usernames[indexPath.row])
+        //      画像がないときにCellの高さを縮小する
+        if inages[indexPath.row] == "none"{
+            Table.estimatedRowHeight = Table.estimatedRowHeight - 30
+        }
+        
+        return cell
+    }
+    
+
     
 }
 

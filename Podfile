@@ -8,7 +8,9 @@ target 'supota' do
   # Pods for supota
   pod 'Firebase'
   pod 'Firebase/Database'
-  
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+
   target 'supotaTests' do
     inherit! :search_paths
     # Pods for testing
