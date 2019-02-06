@@ -13,13 +13,12 @@ import FirebaseAuth
 class PostViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let uid = Auth.auth().currentUser
 
-    //    投稿処理
-
-    //  ストレージアップロード
-    
-    
     @IBOutlet var TextView:UITextView!
     @IBOutlet var ImageButton:UIButton!
+    //
+    @IBOutlet var FirstImageView:UIImageView!
+    @IBOutlet var SecoundImageView:UIImageView!
+    @IBOutlet var ThaadImageview:UIImageView!
     var images:[UIImage] = []
    @IBOutlet var ImageView:UIImageView!
     override func viewDidLoad() {
@@ -42,6 +41,17 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate, UINa
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         images.append(image)
+        if images.count < 2{
+            
+            
+        }else if images.count == 2{
+            ThaadImageview.image = image
+        }else if images.count == 1{
+            SecoundImageView.image = image
+            
+        }else{
+            FirstImageView.image = image
+        }
         
         self.dismiss(animated: false)
     }

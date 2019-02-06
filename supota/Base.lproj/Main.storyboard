@@ -107,22 +107,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DisnyLand is your land!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-cQ-ud8">
-                                <rect key="frame" x="44" y="70" width="286" height="295"/>
+                                <rect key="frame" x="44" y="70" width="286" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kh4-Lj-MiR">
-                                <rect key="frame" x="35" y="390" width="91" height="52"/>
+                                <rect key="frame" x="35" y="353" width="91" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBO-Gu-Iun">
-                                <rect key="frame" x="141" y="390" width="91" height="52"/>
+                                <rect key="frame" x="141" y="353" width="91" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfK-yV-QMT">
-                                <rect key="frame" x="249" y="390" width="91" height="52"/>
+                                <rect key="frame" x="249" y="353" width="91" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -130,7 +130,10 @@
                         <viewLayoutGuide key="safeArea" id="xTa-6q-HlZ"/>
                     </view>
                     <connections>
+                        <outlet property="FirstImageView" destination="kh4-Lj-MiR" id="PXm-J9-mFg"/>
+                        <outlet property="SecoundImageView" destination="VBO-Gu-Iun" id="f1k-7B-G0p"/>
                         <outlet property="TextView" destination="mgd-cQ-ud8" id="lgJ-6s-byF"/>
+                        <outlet property="ThaadImageview" destination="RfK-yV-QMT" id="egw-0x-tXf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDl-Lb-qay" userLabel="First Responder" sceneMemberID="firstResponder"/>
