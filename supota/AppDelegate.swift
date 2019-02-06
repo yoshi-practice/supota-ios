@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  supota
-//
-//  Created by 柳川優稀 on 2019/01/29.
-//  Copyright © 2019年 柳川優稀. All rights reserved.
-//
 
 import UIKit
 import Firebase

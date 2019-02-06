@@ -19,13 +19,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var usernames:[String] = []
     var content: [String] = []
     
-//投稿
-
-    func post(content:String,image:String){
-        ref = Database.database().reference()
-        ref.child("timeline").childByAutoId().setValue(["UID":"uid","content":content,"images":"URL","likes":"0"])
-        
-    }
     
 //データ読み取り
     func read()  {
@@ -96,6 +89,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         return profileImage
     }
+    func getcontentimage(image:String) -> UIImage {
+        var profileImage:UIImage!
+        let imagePath = Storage.storage().reference().child("content/\(image).jpg")
+        
+        // 画像のDLサイズはお好みで調整してください
+        imagePath.getData(maxSize: 1 * 1024 * 1024) { data, error in
+            if error != nil {
+            } else {
+                profileImage = UIImage(data: data!)
+                
+            }
+        }
+        return profileImage
+    }
 
     
     func adduserdata(){
@@ -130,14 +137,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //  Cellに入れる要素の指定
         cell.username.text = usernames[indexPath.row]
         cell.ImageView.image = getprofileimage(uid: usernames[indexPath.row])
-        //      画像がないときにCellの高さを縮小する
+        //      画像がないときにCellの高さを縮小して ImageViewを消す
+        
         if inages[indexPath.row] == "none"{
             Table.estimatedRowHeight = Table.estimatedRowHeight - 30
+            cell.ContentImageView.isHidden = true
+        }else{
+        cell.ContentImageView.image = getcontentimage(image: inages[indexPath.row])
+
         }
         
         return cell
     }
-    
+
 
     
 }

@@ -17,6 +17,8 @@
 		613FAD7C22006BD3004E644E /* supotaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAD7B22006BD3004E644E /* supotaUITests.swift */; };
 		613FAD8C22008019004E644E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 613FAD8B22008019004E644E /* GoogleService-Info.plist */; };
 		61F9F9302206CA190077105F /* Timelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F92F2206CA190077105F /* Timelines.swift */; };
+		61F9F932220AB24A0077105F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F931220AB24A0077105F /* PostViewController.swift */; };
+		61F9F934220AB7340077105F /* timelinefunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F933220AB7340077105F /* timelinefunction.swift */; };
 		6FEA6694A0C7444A78E03D1C /* Pods_supotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B65049739D299D8FFE9FD89 /* Pods_supotaTests.framework */; };
 		D823F64A3D5D3F1A39C37610 /* Pods_supotaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		613FAD7D22006BD3004E644E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613FAD8B22008019004E644E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61F9F92F2206CA190077105F /* Timelines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timelines.swift; sourceTree = "<group>"; };
+		61F9F931220AB24A0077105F /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		61F9F933220AB7340077105F /* timelinefunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timelinefunction.swift; sourceTree = "<group>"; };
 		6370DCBAD7B289099F595B7C /* Pods-supotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supotaTests/Pods-supotaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1B49037E3023E6EE0106D68 /* Pods-supota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supota.release.xcconfig"; path = "Pods/Target Support Files/Pods-supota/Pods-supota.release.xcconfig"; sourceTree = "<group>"; };
 		A52A711B9A2A4DB7EBC893F7 /* Pods-supotaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-supotaUITests/Pods-supotaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				613FAD5B22006BD0004E644E /* AppDelegate.swift */,
+				61F9F933220AB7340077105F /* timelinefunction.swift */,
+				61F9F931220AB24A0077105F /* PostViewController.swift */,
 				613FAD5D22006BD0004E644E /* ViewController.swift */,
 				61F9F92F2206CA190077105F /* Timelines.swift */,
 				613FAD5F22006BD0004E644E /* Main.storyboard */,
@@ -388,9 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F9F932220AB24A0077105F /* PostViewController.swift in Sources */,
 				613FAD5E22006BD0004E644E /* ViewController.swift in Sources */,
 				61F9F9302206CA190077105F /* Timelines.swift in Sources */,
 				613FAD5C22006BD0004E644E /* AppDelegate.swift in Sources */,
+				61F9F934220AB7340077105F /* timelinefunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
