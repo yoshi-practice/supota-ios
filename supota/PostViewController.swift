@@ -52,12 +52,14 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     
     @IBAction func postBtn(){
         let timestamp:String = "\(ServerValue.timestamp())"
-        
-        for i in 0..<images.count {
-            timeline().uploadimage(data: UIImagePNGRepresentation(images[i])!, title: String(i), path: timestamp)
+        var imagebool:String = "none"
+        if images != []{
+            imagebool = "init"
+            for i in 0..<images.count {
+                timeline().uploadimage(data: UIImagePNGRepresentation(images[i])!, title: String(i), path: timestamp)
+            }
         }
-        
-        timeline().post(content: TextView.text ,image: timestamp)
+        timeline().post(content: TextView.text ,image: imagebool ,timestamp: timestamp)
         
     }
     

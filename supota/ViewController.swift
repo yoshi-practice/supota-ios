@@ -15,9 +15,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var items: [DataSnapshot] = []
     var useritems: [DataSnapshot] = []
     var inages: [String] = []
+    var likes: [String] = []
     var uid:[String] = []
     var usernames:[String] = []
     var content: [String] = []
+    var postid: [String] = []
     
     
 //データ読み取り
@@ -111,6 +113,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             usernames.append(item["username"] as! String)
             uid.append(item["uid"] as! String)
             inages.append(item["images"] as! String)
+            likes.append(item["likes"] as! String)
+            postid.append(item["timestamp"] as! String)
             
         }
         
@@ -128,7 +132,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 生成するCellの数
-        return 4
+        return content.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -137,6 +141,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //  Cellに入れる要素の指定
         cell.username.text = usernames[indexPath.row]
         cell.ImageView.image = getprofileimage(uid: usernames[indexPath.row])
+        cell.likes.setTitle(likes[indexPath.row], for: .normal)
+        cell.likes.tag = indexPath.row
+        cell.likes.addTarget(self, action: "pushButton:", for: .touchUpInside)
+
         //      画像がないときにCellの高さを縮小して ImageViewを消す
         
         if inages[indexPath.row] == "none"{
@@ -148,6 +156,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         
         return cell
+    }
+    @objc private func pushButton(_ sender:UIButton)
+    {
+        let row = sender.tag
+        timeline().like(postid: postid[row], like: String(Int(likes[row])!+1))
     }
 
 
