@@ -62,7 +62,7 @@
                     <connections>
                         <outlet property="password" destination="htA-wD-hcO" id="nrc-uE-bSv"/>
                         <outlet property="username" destination="oqh-0l-jKl" id="i0a-U8-zh1"/>
-                        <segue destination="BYZ-38-t0r" kind="modal" identifier="success" id="o0n-JH-fAl"/>
+                        <segue destination="cNJ-hD-mrJ" kind="modal" identifier="success" id="o0n-JH-fAl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK1-Sx-1J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,9 +82,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8f-tB-WKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="832"/>
+            <point key="canvasLocation" x="2497" y="859"/>
         </scene>
-        <!--Item-->
+        <!--Timeline-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="supota" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,53 +103,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qwt-bI-qV5" id="JLw-V5-BSQ" customClass="TimelineTableTableViewCell" customModule="supota" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="267.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-qA-MI6">
-                                                    <rect key="frame" x="93" y="16" width="72" height="23"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あいうえおさしすせそたちつてと" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swe-t0-9Br">
-                                                    <rect key="frame" x="93" y="41" width="267" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="9"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mP-i5-zvq">
-                                                    <rect key="frame" x="6" y="15" width="55" height="55"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ey-ND-Au8">
-                                                    <rect key="frame" x="0.0" y="119" width="375" height="139"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gN-qH-f83">
-                                                    <rect key="frame" x="167" y="17" width="94" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO0-yb-m9H">
-                                                    <rect key="frame" x="120" y="99" width="45" height="12"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
-                                                    <state key="normal" title="00">
-                                                        <color key="titleColor" red="1" green="0.63137254901960782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
                                             <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <outlet property="ContentImageView" destination="6ey-ND-Au8" id="iuh-LJ-NZe"/>
-                                                <outlet property="Description" destination="swe-t0-9Br" id="FCQ-9s-01k"/>
-                                                <outlet property="ImageView" destination="6mP-i5-zvq" id="Nbe-ZT-KH1"/>
-                                                <outlet property="likes" destination="dO0-yb-m9H" id="qyP-Fh-iYy"/>
-                                                <outlet property="username" destination="OIh-qA-MI6" id="sRn-Nb-9qf"/>
-                                            </connections>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -158,14 +112,14 @@
                         <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oYm-M2-Fdg"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" id="oYm-M2-Fdg"/>
                     <connections>
                         <outlet property="Table" destination="dRK-WK-2l1" id="Ggj-mn-x2a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5999999999999" y="132.68365817091455"/>
+            <point key="canvasLocation" x="2496.8000000000002" y="132.68365817091455"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="U15-Lu-DsH">
@@ -196,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="1122.4000000000001" y="-657.12143928035982"/>
         </scene>
-        <!--Post View Controller-->
+        <!--Post-->
         <scene sceneID="cEI-Sg-dVb">
             <objects>
                 <viewController id="0py-fB-hxJ" customClass="PostViewController" customModule="supota" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,24 +159,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DisnyLand is your land!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-cQ-ud8">
-                                <rect key="frame" x="73" y="72" width="286" height="251"/>
+                                <rect key="frame" x="44" y="32" width="286" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rY-ph-lFW">
+                                <rect key="frame" x="284" y="338" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="postBtn" destination="0py-fB-hxJ" eventType="touchUpInside" id="a70-ux-b5A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITU-dr-ipp">
+                                <rect key="frame" x="44" y="338" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="xTa-6q-HlZ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Post" id="Jog-HO-yPY"/>
                     <connections>
                         <outlet property="TextView" destination="mgd-cQ-ud8" id="ff4-Wh-dTr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDl-Lb-qay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2373.5999999999999" y="132.68365817091455"/>
+            <point key="canvasLocation" x="2497" y="-599"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8io-Oc-AZ4">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cNJ-hD-mrJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="35M-Kr-lqq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bi7-wZ-eCR"/>
+                        <segue destination="0py-fB-hxJ" kind="relationship" relationship="viewControllers" id="iZZ-u1-lkQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymR-7V-a8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

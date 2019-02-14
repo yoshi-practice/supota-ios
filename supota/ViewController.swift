@@ -5,6 +5,36 @@ import UIKit
 import FirebaseStorage
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Table.delegate = self
+        Table.dataSource = self
+        read()
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+                return content.count
+
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+                //  Cellの指定
+                let cell = Table.dequeueReusableCell(withIdentifier: "Cell") as! TimelineTableTableViewCell
+                //  Cellに入れる要素の指定
+                cell.username.text = usernames[indexPath.row]
+                cell.ImageView.image = getprofileimage(uid: usernames[indexPath.row])
+                cell.likes.setTitle(likes[indexPath.row], for: .normal)
+                cell.likes.tag = indexPath.row
+                cell.likes.addTarget(self, action: "pushButton:", for: .touchUpInside)
+        
+                return cell
+    }
+    
 
     
     @IBOutlet var TextFeild:UITextField!
@@ -49,7 +79,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func set(){
         for value in items{
             let item = value.value as! Dictionary<String, AnyObject>
-//            usernames.append(item["username"] as! String)
             uid.append(item["UID"] as! String)
             inages.append(item["image"] as! String)
             likes.append(item["likes"] as! String)
@@ -103,43 +132,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return profileImage
     }
 //以下は表示関係
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        Table.delegate = self
-        Table.dataSource = self
-        read()
-   
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
 
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 生成するCellの数
-        return content.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //  Cellの指定
-        let cell = Table.dequeueReusableCell(withIdentifier: "Cell") as! TimelineTableTableViewCell
-        //  Cellに入れる要素の指定
-        cell.username.text = usernames[indexPath.row]
-        cell.ImageView.image = getprofileimage(uid: usernames[indexPath.row])
-        cell.likes.setTitle(likes[indexPath.row], for: .normal)
-        cell.likes.tag = indexPath.row
-        cell.likes.addTarget(self, action: "pushButton:", for: .touchUpInside)
-        
-        return cell
-    }
-    @objc private func pushButton(_ sender:UIButton)
-    {
-        let row = sender.tag
-        timeline().like(postid: postid[row], like: String(Int(likes[row])!+1))
-    }
-
-
+  
     
 }
 
