@@ -9,9 +9,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet var TextFeild:UITextField!
     @IBOutlet var TextView:UITextView!
-    var Table:UITableView!
+    @IBOutlet var Table:UITableView!
     var snap: DataSnapshot!
-    var ref: DatabaseReference!
+    var usersnap:DataSnapshot!
+    let ref = Database.database().reference()
     var items: [DataSnapshot] = []
     var useritems: [DataSnapshot] = []
     var inages: [String] = []
@@ -24,15 +25,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
 //データ読み取り
     func read()  {
-        ref.child("test").observe(.value, with: {(snapShots) in
+        ref.child("timeline").observe(.value, with: {(snapShots) in
             if snapShots.children.allObjects is [DataSnapshot] {
+                
                 self.snap = snapShots
-
+                
             }
             self.reloaddata(snap: self.snap)
         })
     }
-    
 //受信データを配列に格納
     func reloaddata(snap: DataSnapshot) {
         if snap.exists() {
@@ -41,41 +42,37 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 items.append(item  as! DataSnapshot)
             }
         }
+        set()
     }
     
 //配列を展開し、TableView表示形式に整形。
     func set(){
         for value in items{
             let item = value.value as! Dictionary<String, AnyObject>
+//            usernames.append(item["username"] as! String)
+            uid.append(item["UID"] as! String)
+            inages.append(item["image"] as! String)
+            likes.append(item["likes"] as! String)
+            postid.append(item["timestamp"] as! String)
             let postuser = item["UID"] as! String
             finduserdata(uid: postuser)
-            
-            
-            
-            
         }
-    
+        Table.reloadData()
+
     }
     
 //個人データの取得
     func finduserdata(uid:String)  {
-        ref.child("userdata").child(uid).observe(.value, with: {(snapShots) in
+        ref.child("userdata").child(uid).child("username").observe(.value, with: {(snapShots) in
             if snapShots.children.allObjects is [DataSnapshot] {
-                self.snap = snapShots
+                self.usersnap = snapShots
+                self.usernames.append((snapShots.value! as AnyObject).description)
+                print(self.usernames)
             }
-            self.reloaduserddata(snap: self.snap)
         })
+        Table.reloadData()
     }
     
-    //受信データを配列に格納
-    func reloaduserddata(snap: DataSnapshot) {
-        if snap.exists() {
-            print(snap)
-            for item in snap.children {
-                useritems.append(item  as! DataSnapshot)
-            }
-        }
-    }
     
     func getprofileimage(uid:String) -> UIImage {
         var profileImage:UIImage!
@@ -105,24 +102,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         return profileImage
     }
-
-    
-    func adduserdata(){
-        for value in items{
-            let item = value.value as! Dictionary<String, AnyObject>
-            usernames.append(item["username"] as! String)
-            uid.append(item["uid"] as! String)
-            inages.append(item["images"] as! String)
-            likes.append(item["likes"] as! String)
-            postid.append(item["timestamp"] as! String)
-            
-        }
-        
-    }
 //以下は表示関係
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Table.delegate = self
+        Table.dataSource = self
+        read()
+   
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -144,16 +130,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.likes.setTitle(likes[indexPath.row], for: .normal)
         cell.likes.tag = indexPath.row
         cell.likes.addTarget(self, action: "pushButton:", for: .touchUpInside)
-
-        //      画像がないときにCellの高さを縮小して ImageViewを消す
-        
-        if inages[indexPath.row] == "none"{
-            Table.estimatedRowHeight = Table.estimatedRowHeight - 30
-            cell.ContentImageView.isHidden = true
-        }else{
-        cell.ContentImageView.image = getcontentimage(image: inages[indexPath.row])
-
-        }
         
         return cell
     }

@@ -19,6 +19,7 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     @IBOutlet var FirstImageView:UIImageView!
     @IBOutlet var SecoundImageView:UIImageView!
     @IBOutlet var ThaadImageview:UIImageView!
+    let ref = Database.database().reference()
     var images:[UIImage] = []
    @IBOutlet var ImageView:UIImageView!
     override func viewDidLoad() {
@@ -46,6 +47,7 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate, UINa
             
         }else if images.count == 2{
             ThaadImageview.image = image
+            
         }else if images.count == 1{
             SecoundImageView.image = image
             
@@ -61,15 +63,23 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate, UINa
     }
     
     @IBAction func postBtn(){
-        let timestamp:String = "\(ServerValue.timestamp())"
         var imagebool:String = "none"
         if images != []{
             imagebool = "init"
             for i in 0..<images.count {
-                timeline().uploadimage(data: UIImagePNGRepresentation(images[i])!, title: String(i), path: timestamp)
+//                timeline().uploadimage(data: UIImagePNGRepresentation(images[i])!, title: String(i), path: timestamp)
             }
+        }else{
+            imagebool = "empty"
+
         }
-        timeline().post(content: TextView.text ,image: imagebool ,timestamp: timestamp)
+        let timeInterval = NSDate().timeIntervalSince1970
+        let myTimeInterval = TimeInterval(timeInterval)
+        let time = NSDate(timeIntervalSince1970: TimeInterval(myTimeInterval))
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMddHHmmss"
+        let timestamp = formatter.string(from: time as Date)
+        ref.child("timeline").childByAutoId().setValue(["UID":"uid","content":TextView.text!,"image":imagebool,"likes":"0","timestamp":timestamp])
         
     }
     

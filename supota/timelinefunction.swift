@@ -5,12 +5,12 @@ import FirebaseStorage
 import FirebaseAuth
 class timeline {
     let ref = Database.database().reference()
-    let uid = Auth.auth().currentUser
 
 
 
     func post(content:String,image:String,timestamp:String){
-        ref.child("timeline").child(timestamp).setValue(["UID":uid,"content":content,"postid":image,"likes":"0","timestamp":timestamp])
+        let uid = Auth.auth().currentUser
+ ref.child("timeline").childByAutoId().setValue(["UID":uid,"content":content,"postid":image,"likes":"0","timestamp":timestamp])
         
     }
     func like(postid:String,like:String){
@@ -22,4 +22,6 @@ class timeline {
         imagePath.putData(data, metadata: nil)
         
     }
+
+
 }
