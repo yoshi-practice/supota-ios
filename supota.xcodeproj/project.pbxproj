@@ -32,6 +32,8 @@
 		B7AFF45D2217C82F00531256 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF45C2217C82F00531256 /* HomeTableViewCell.swift */; };
 		B7AFF45F2217CB9500531256 /* UIImageView+Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF45E2217CB9500531256 /* UIImageView+Nuke.swift */; };
 		B7AFF4612217CCAD00531256 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AFF4602217CCAD00531256 /* TabBar.storyboard */; };
+		B7AFF4652217D98F00531256 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AFF4642217D98F00531256 /* User.storyboard */; };
+		B7AFF4672217D99A00531256 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF4662217D99A00531256 /* UserViewController.swift */; };
 		D823F64A3D5D3F1A39C37610 /* Pods_supotaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		B7AFF45C2217C82F00531256 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B7AFF45E2217CB9500531256 /* UIImageView+Nuke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Nuke.swift"; sourceTree = "<group>"; };
 		B7AFF4602217CCAD00531256 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		B7AFF4642217D98F00531256 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		B7AFF4662217D99A00531256 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		D4E8A973F4E4B2AC33049A16 /* Pods-supotaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaUITests/Pods-supotaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E99FA008561C5033F31D1F64 /* Pods-supotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaTests/Pods-supotaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +225,7 @@
 		B7AFF44C2217C39700531256 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7AFF4622217D98400531256 /* User */,
 				B7AFF44D2217C39E00531256 /* Home */,
 			);
 			path = View;
@@ -238,6 +243,7 @@
 		B7AFF4502217C3AE00531256 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				B7AFF4632217D98A00531256 /* User */,
 				B7AFF4512217C3B400531256 /* Home */,
 				B7AFF4602217CCAD00531256 /* TabBar.storyboard */,
 			);
@@ -268,6 +274,22 @@
 				B7AFF45C2217C82F00531256 /* HomeTableViewCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		B7AFF4622217D98400531256 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B7AFF4662217D99A00531256 /* UserViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		B7AFF4632217D98A00531256 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B7AFF4642217D98F00531256 /* User.storyboard */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +406,7 @@
 				613FAD8C22008019004E644E /* GoogleService-Info.plist in Resources */,
 				613FAD6322006BD3004E644E /* Assets.xcassets in Resources */,
 				B7AFF4612217CCAD00531256 /* TabBar.storyboard in Resources */,
+				B7AFF4652217D98F00531256 /* User.storyboard in Resources */,
 				613FAD6122006BD0004E644E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AFF4672217D99A00531256 /* UserViewController.swift in Sources */,
 				B7AFF4562217C75B00531256 /* UIColorHex.swift in Sources */,
 				B7AFF45D2217C82F00531256 /* HomeTableViewCell.swift in Sources */,
 				613FAD5C22006BD0004E644E /* AppDelegate.swift in Sources */,
