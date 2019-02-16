@@ -31,6 +31,7 @@
 		B7AFF4582217C77100531256 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF4572217C77100531256 /* UITableViewExtension.swift */; };
 		B7AFF45D2217C82F00531256 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF45C2217C82F00531256 /* HomeTableViewCell.swift */; };
 		B7AFF45F2217CB9500531256 /* UIImageView+Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF45E2217CB9500531256 /* UIImageView+Nuke.swift */; };
+		B7AFF4612217CCAD00531256 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AFF4602217CCAD00531256 /* TabBar.storyboard */; };
 		D823F64A3D5D3F1A39C37610 /* Pods_supotaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		B7AFF4572217C77100531256 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		B7AFF45C2217C82F00531256 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B7AFF45E2217CB9500531256 /* UIImageView+Nuke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Nuke.swift"; sourceTree = "<group>"; };
+		B7AFF4602217CCAD00531256 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		D4E8A973F4E4B2AC33049A16 /* Pods-supotaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaUITests/Pods-supotaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E99FA008561C5033F31D1F64 /* Pods-supotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaTests/Pods-supotaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				B7AFF4512217C3B400531256 /* Home */,
+				B7AFF4602217CCAD00531256 /* TabBar.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				B7AFF4532217C3BA00531256 /* Home.storyboard in Resources */,
 				613FAD8C22008019004E644E /* GoogleService-Info.plist in Resources */,
 				613FAD6322006BD3004E644E /* Assets.xcassets in Resources */,
+				B7AFF4612217CCAD00531256 /* TabBar.storyboard in Resources */,
 				613FAD6122006BD0004E644E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,8 @@ class HomeViewController: UIViewController {
             tableView.dataSource = self
             tableView.delegate = self
             tableView.tableFooterView = UIView()
-            tableView.separatorStyle = .none
+            tableView.allowsSelection = false
+            tableView.backgroundColor = .black
             tableView.register(HomeTableViewCell.self)
         }
     }
@@ -23,6 +24,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .black
     }
 }
 
