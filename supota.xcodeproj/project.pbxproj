@@ -251,6 +251,7 @@
 				B7AFF4572217C77100531256 /* UITableViewExtension.swift */,
 			);
 			name = Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
