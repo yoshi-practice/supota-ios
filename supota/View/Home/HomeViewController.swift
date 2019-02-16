@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
             tableView.delegate = self
             tableView.tableFooterView = UIView()
             tableView.separatorStyle = .none
+            tableView.register(HomeTableViewCell.self)
         }
     }
 
@@ -31,7 +32,9 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeusReusableCell(of: HomeTableViewCell.self, for: indexPath)
+        cell.update()
+        return cell
     }
 }
 
