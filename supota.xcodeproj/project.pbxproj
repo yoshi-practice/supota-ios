@@ -142,12 +142,12 @@
 		613FAD4F22006BD0004E644E = {
 			isa = PBXGroup;
 			children = (
+				3FC62CB37F7B4F8ED984E42E /* Frameworks */,
+				892FED750A9A2CB3F0D621FF /* Pods */,
+				613FAD5922006BD0004E644E /* Products */,
 				613FAD5A22006BD0004E644E /* supota */,
 				613FAD6F22006BD3004E644E /* supotaTests */,
 				613FAD7A22006BD3004E644E /* supotaUITests */,
-				613FAD5922006BD0004E644E /* Products */,
-				892FED750A9A2CB3F0D621FF /* Pods */,
-				3FC62CB37F7B4F8ED984E42E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,11 +167,11 @@
 				B7AFF4502217C3AE00531256 /* Storyboard */,
 				B7AFF44C2217C39700531256 /* View */,
 				613FAD5B22006BD0004E644E /* AppDelegate.swift */,
-				613FAD5F22006BD0004E644E /* Main.storyboard */,
 				613FAD6222006BD3004E644E /* Assets.xcassets */,
-				613FAD6422006BD3004E644E /* LaunchScreen.storyboard */,
 				613FAD8B22008019004E644E /* GoogleService-Info.plist */,
 				613FAD6722006BD3004E644E /* Info.plist */,
+				613FAD6422006BD3004E644E /* LaunchScreen.storyboard */,
+				613FAD5F22006BD0004E644E /* Main.storyboard */,
 			);
 			path = supota;
 			sourceTree = "<group>";
@@ -179,8 +179,8 @@
 		613FAD6F22006BD3004E644E /* supotaTests */ = {
 			isa = PBXGroup;
 			children = (
-				613FAD7022006BD3004E644E /* supotaTests.swift */,
 				613FAD7222006BD3004E644E /* Info.plist */,
+				613FAD7022006BD3004E644E /* supotaTests.swift */,
 			);
 			path = supotaTests;
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 		613FAD7A22006BD3004E644E /* supotaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				613FAD7B22006BD3004E644E /* supotaUITests.swift */,
 				613FAD7D22006BD3004E644E /* Info.plist */,
+				613FAD7B22006BD3004E644E /* supotaUITests.swift */,
 			);
 			path = supotaUITests;
 			sourceTree = "<group>";
@@ -213,6 +213,7 @@
 				B7AFF44D2217C39E00531256 /* Home */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		B7AFF44D2217C39E00531256 /* Home */ = {
@@ -237,6 +238,7 @@
 				B7AFF4522217C3BA00531256 /* Home.storyboard */,
 			);
 			name = Home;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,6 +530,7 @@
 				613FAD6022006BD0004E644E /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		613FAD6422006BD3004E644E /* LaunchScreen.storyboard */ = {
@@ -536,6 +539,7 @@
 				613FAD6522006BD3004E644E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
