@@ -1,0 +1,8 @@
+github "Alamofire/Alamofire" "4.8.1"
+github "Ekhoo/Device" "3.1.2"
+github "ReactiveX/RxSwift" "4.4.1"
+github "SnapKit/SnapKit" "4.2.0"
+github "adamwaite/Validator" "v3.1.1"
+github "kean/Nuke" "7.5.2"
+github "radex/SwiftyUserDefaults" "3.0.1"
+github "xmartlabs/XLPagerTabStrip" "8.1.1"
