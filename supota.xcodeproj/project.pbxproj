@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,7 +29,6 @@
 		B7AFF4532217C3BA00531256 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AFF4522217C3BA00531256 /* Home.storyboard */; };
 		B7AFF4562217C75B00531256 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF4552217C75B00531256 /* UIColorHex.swift */; };
 		B7AFF4582217C77100531256 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF4572217C77100531256 /* UITableViewExtension.swift */; };
-		B7AFF45A2217C7A200531256 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AFF4592217C7A100531256 /* Notification+Extension.swift */; };
 		D823F64A3D5D3F1A39C37610 /* Pods_supotaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A317BD546BDDC75619A8722 /* Pods_supotaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +83,6 @@
 		B7AFF4522217C3BA00531256 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B7AFF4552217C75B00531256 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		B7AFF4572217C77100531256 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
-		B7AFF4592217C7A100531256 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		D4E8A973F4E4B2AC33049A16 /* Pods-supotaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaUITests/Pods-supotaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E99FA008561C5033F31D1F64 /* Pods-supotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-supotaTests/Pods-supotaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,7 +249,6 @@
 			children = (
 				B7AFF4552217C75B00531256 /* UIColorHex.swift */,
 				B7AFF4572217C77100531256 /* UITableViewExtension.swift */,
-				B7AFF4592217C7A100531256 /* Notification+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -341,7 +338,7 @@
 				};
 			};
 			buildConfigurationList = 613FAD5322006BD0004E644E /* Build configuration list for PBXProject "supota" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -505,7 +502,6 @@
 				B7AFF4562217C75B00531256 /* UIColorHex.swift in Sources */,
 				613FAD5C22006BD0004E644E /* AppDelegate.swift in Sources */,
 				B7AFF44F2217C3A600531256 /* HomeViewController.swift in Sources */,
-				B7AFF45A2217C7A200531256 /* Notification+Extension.swift in Sources */,
 				B7AFF4582217C77100531256 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
