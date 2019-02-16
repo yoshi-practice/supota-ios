@@ -12,7 +12,11 @@ class HomeViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
-
+            tableView.dataSource = self
+            tableView.delegate = self
+            tableView.tableFooterView = UIView()
+//            tableView.backgroundColor = UIColor(named: "bg")
+            tableView.separatorStyle = .none
         }
     }
 
