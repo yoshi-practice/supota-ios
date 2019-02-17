@@ -1,26 +1,24 @@
 # supota-ios
 
-## クローン
+## Clone
 
 ```:bash
 $ git clone https://github.com/supota/supota-ios.git
 ```
 
-
-
-## インストール
+## Setting
 
 アプリで使用するライブラリは`Carthage`と`CocoaPods`で管理しています。
 
 これらをインストールしていない場合は以下に沿ってインストールしてください。
 
-### Carthageのインストール
+### Carthage
 
 ```:bash
 $ brew install carthage
 ```
 
-### CocoaPodsのインストール
+### CocoaPods
 
 ```:bash
 $ brew install cocoapods
